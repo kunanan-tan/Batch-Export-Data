@@ -74,7 +74,7 @@ public class TransferDataServiceImpl {
             bw = new OutputStreamWriter(new FileOutputStream(file.getAbsoluteFile()), Constants.TXT_FILE.CHARSET_ENCODING);
 
             //subject
-            bw.write(subjectLEG());
+            bw.write(subject());
             bw.write(lineSeparator);
 
             if(!DBTest.isEmpty()){
@@ -104,7 +104,7 @@ public class TransferDataServiceImpl {
         }
     }
 
-    public String subjectLEG(){
+    public String subject(){
         String subject = "\"one\",\"two\",\"three\"";
         return subject;
     }
